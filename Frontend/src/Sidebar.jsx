@@ -18,7 +18,7 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }) {
 
   const getAllThreads = async () => {
     try {
-      const response = await fetch("http://localhost:8080/api/thread");
+      const response = await fetch("https://chatgpt-backend-w9t9.onrender.com/api/thread");
 
       if (!response.ok) {
         throw new Error("Failed to fetch threads");
@@ -55,7 +55,7 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }) {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/api/thread/${threadId}`,
+        `https://chatgpt-backend-w9t9.onrender.com/api/thread/${threadId}`,
       );
 
       if (!response.ok) {
@@ -78,7 +78,7 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }) {
   const deleteThread = async (threadId) => {
     try {
       const response = await fetch(
-        `http://localhost:8080/api/thread/${threadId}`,
+        `https://chatgpt-backend-w9t9.onrender.com/api/thread/${threadId}`,
         { method: "DELETE" },
       );
 

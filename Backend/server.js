@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 8080;
 
 app.use(
   cors({
-    origin: "http://localhost:5173", //restrict to frontend URL later
+    origin: "https://chatgpt-frontend-310m.onrender.com", //restrict to frontend URL later
   }),
 );
 

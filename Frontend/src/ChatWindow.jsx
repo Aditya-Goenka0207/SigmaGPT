@@ -37,7 +37,7 @@ export default function ChatWindow() {
     };
 
     try {
-      const response = await fetch("http://localhost:8080/api/chat", options);
+      const response = await fetch("https://chatgpt-backend-w9t9.onrender.com/api/chat", options);
       if (!response.ok) {
         throw new Error("Failed to fetch reply");
       }
